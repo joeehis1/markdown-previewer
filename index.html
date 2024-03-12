@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+    </head>
+    <body>
+        <header class="py-5">
+            <div class="container">
+                <h1 class="text-primary display-2">Markdown Previewer</h1>
+                <p>
+                    Type in your markdown text. As you type your text will be
+                    rendered in html in the preview panel. An example has
+                    already been presented for you. See below:
+                </p>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="markdown-preview-textarea">
+                    <section class="editor-section">
+                        <label
+                            class="d-flex border border-primary justify-content-between p-3"
+                        >
+                            <h2>Editor</h2>
+                            <button class="toggle-btn"></button>
+                        </label>
+                        <textarea
+                            name=""
+                            id="editor"
+                            cols="30"
+                            rows="10"
+                            class="w-100 border border-primary p-3"
+                        ></textarea>
+                    </section>
+                    <section class="preview-section">
+                        <div
+                            class="d-flex border border-primary justify-content-between p-3"
+                        >
+                            <h2>Preview</h2>
+                            <button class="toggle-btn"></button>
+                        </div>
+                        <div
+                            class="preview p-3 border border-primary"
+                            id="preview"
+                        ></div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
